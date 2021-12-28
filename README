@@ -1,0 +1,27 @@
+<Copyright Alexandru Olteanu, grupa 322CA, alexandruolteanu2001@gmail.com>
+
+	Arhiva cuprinde cele 20 de teste pe care le-am generat pentru testarea corectitudinii
+celor 3 algoritmi ce rezolva problema RMQ. Am generat aceste teste cu ajutorul programului 
+generate.cpp. Primele 5 sunt teste de dimensiune mica pentru verificarea vizuala a corectitudinii.
+Urmatoarele 5 sunt teste de dimensiune medie (n si m sunt pana la 10 000). Urmatoarele 5 au 
+n si m pana la valorile maxime (10^6) doar ca sunt random. De la testul 16 la 19 sunt mereu 
+n si m egale cu 10^6 dar intrebarile au intervale random. In cele din urma, testul 20 are 
+atat n si m maxime cat si intrebarile sunt puse mereu pe intervalul [1, n].
+	In arhiva se afla si urmatoarele :
+algo_test.cpp => Programul main ce apeleaza functia find_minimum() automat in functie de 
+				 build-ul Makefile-ului
+algo.h 		  => Fisier auxiliar pentru conectarea celor 3 algoritmi cu programul principal
+checker.py	  => Checker-ul local (Rulati fara unique tests pentru testare)
+Makefile	  => Regulile de build si run pentru program 
+	De asemenea, arhiva cuprinde si cei trei algoritmi alesi, Segment Tree, Sparse Table si
+Square Root Decomposition.
+
+	Pentru algoritmi am lucrat in mare parte cu template-urile create de mine inainte de aceasta 
+tema ce se gasesc pe profilul meu de github la https://github.com/AlexandruOlteanu/Programming-Templates .
+Singurul template pe care l-am creat de curand a fost algoritmul pentru Square Root Decomposition
+care a fost inspirat de la urmatorul link : https://cp-algorithms.com/data_structures/sqrt_decomposition.html
+	Acestea au fost toate resursele cu ajutorul carora am scris algoritmii.
+
+P.S : Algoritmul Segment Tree implementeaza si lucrul cu update-uri. Pentru verificarea unor teste de catre 
+utilizator puteti atribui valoarea 1 variabilei "make_updates" din acesta.
+
